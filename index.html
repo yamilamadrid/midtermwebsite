@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> <!-- PROF NOTE: CSS for slideshow library -->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<nav class="navbar">
+		<div class="container">
+			<div class="menu">
+				<a href="index.html">Home</a>
+				<a href="episodes.html">Episodes</a>
+				<a href="about.html">About</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="parallax">
+		<img src="Brewing_Ideas.png" alt="Brewing_Ideas">
+	</div>
+
+	<div class="content">
+		<h3> Welcome to Brewing Ideas!! <br> <br> this is an all-encompassing podcast where your hosts (Ashrita and Yamila) sit down with a fresh pot of tea and a never-ending supply of curiousity in the big city! We are so excited to finally be starting this long-awaited project with everyone:) From the profound to the mundane, we'll brew up conversations on everything under the sun. From the confort of our cozy tea corner, we'll delve into the big questions, the small moments, and everything in between. Grab a cup, get comfy, and let's brew some ideas together! </h3> 
+	</div>
+
+	<div class="main">
+		<p></p>
+	</div>
+
+	<!-- <div class="parallax"></div> -->
+
+	<div class="RecentEpisodes" >
+		<h3>↓ Most Recent Episodes! ↓ ≧◡≦ </h3>
+
+		<div class="swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<div class="episodePreviewContainer">
+						<img src="IMG_0006.jpg">
+						<div class="episodePreviewInfo">
+							<h3><a href="episodes.html">#001: Welcome to Brewing Ideas!</a></h3>
+							<p>In our very first episode, we welcome our audience with open arms and give you a run-down of how our podcast is gonna work! We'll have weekly episodes, and introduce some fun series that we have planned for the next little bit!</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="episodePreviewContainer">
+						<img src="IMG_0008.JPG">
+						<div class="episodePreviewInfo">
+							<h3><a href="episodes.html">#002: Why we brewing LMAO</a></h3>
+							<p>We wanted to give a little context as to how we met and how this podcast came to be! This is a project we've been talking about for a while, so we wanted to discuss why we felt making a podcast would be a good avenue for us, and perhaps encourage others to do the same! You should be warned though, the stories are quite a rollercoaster.. buckle up lmao.</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="episodePreviewContainer">
+						<img src="IMG_0010.jpg">
+						<div class="episodePreviewInfo">
+							<h3><a href="episodes.html">#003: the quarter-life crisis</a></h3>
+							<p>Your hosts are unfortunately (or fortunately, depending on how u think of this) newly-turned 20-year-olds... and we have a lot to say. We'll pour our hearts out about the lessons we've learned, memories we've made, and the dreams we're chasing. This episode is equal parts introspective and irrelevant, but we hope you enjoy :)
+
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="episodePreviewContainer">
+						<img src="IMG_0012.jpg">
+						<div class="episodePreviewInfo">
+							<h3><a href="episodes.html">#004: stories from our sides of the world</a></h3>
+							<p>We grew up on opposite sides of the world--When both of us are home, one of us is going to sleep when the other is waking up. Though we grew up in completely different cultures that have shaped our trains of thought, our similarites ultimately brought us together for the better, and we wanted to talk about the nuances such situations and how rare it is to find the people for you.</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="episodePreviewContainer">
+						<img src="IMG_0018.jpg">
+						<div class="episodePreviewInfo">
+							<h3><a href="episodes.html">#005: nyu & idm </a></h3>
+							<p>Ashrita and I are both majoring in IDM (Integrated Design & Media) at NYU Tandon School of Engineering, and we wanted to talk about our experience in the major, as well as thoughts on school in general, important conversations regarding our university, as well as what we aspire to do after we finish school.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+			<!-- If we need scrollbar -->
+			<!-- <div class="swiper-scrollbar"></div> -->
+		</div>
+
+	</div>
+
+	<!-- <div class="parallax"></div> -->
+
+	<!-- PROF NOTE: Javascript library for slider ( https://swiperjs.com/ ) -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+		  // Optional parameters
+		  // direction: 'vertical',
+			loop: true,
+      slidesPerView: 2,
+      spaceBetween: 30,
+      centeredSlides: true,
+
+		  // If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+			},
+
+		  // Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+		  // And if we need scrollbar
+			scrollbar: {
+				el: '.swiper-scrollbar',
+			},
+		});
+	</script>
+
+</body>
+</html>
