@@ -312,6 +312,10 @@ width: 20%;
 	opacity: .95;
 }
 
+
+
+
+
 @media only screen and (max-width: 640px){
 
 .mnavbar {
@@ -357,6 +361,76 @@ width: 20%;
 	display: flex;
 	gap: 1em;
 	font-size: .5 rem;
+}
+
+.parallax {
+	background-image: url('PICT2402.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+/*	overflow: hidden;*/
+/*	position: relative;*/
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.parallax > img {
+	height: 100%;
+}
+
+
+.image-container {
+	position: absolute;
+	display: 	flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	height: 40vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: 	flex;
+  justify-content: 	center;
+  align-items: center	;
+  opacity: 	0;
+  transition: 0.2s ease;
+  border-radius: 	5px;
+  z-index: 3;
+}
+
+.overlay p {
+	color: white	;
+	font-size: 50px;
+	font-family: "Nanum Pen Script";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.image-container:hover .overlay{
+	opacity: .95;
+}
+
+.AboutUsContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center	;
+	padding: 	15px;
+	align-content: space-around;
+	background-image: radial-gradient(#c2b7ae 2px, transparent 2px);
+	background-size: 32px 32px;
+	background-color: #fefbea;
+	font-size: 1rem;
 }
 
 }
